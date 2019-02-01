@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-project';
+    currentPage: string = 'recipes';
+
+    onNavigate = (route: string) => {
+        this.currentPage = route;
+    }
 }
